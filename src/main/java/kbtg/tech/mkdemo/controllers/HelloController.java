@@ -20,6 +20,12 @@ public class HelloController {
 		//return new HelloResponse(name);
 		return new HelloResponse(result);
 	}
+	
+	@GetMapping("/hey/{id}")
+	public HelloResponse hey(@PathVariable int id){
+		String result = messageService.getNameById(id);
+		return new HelloResponse(result);
+	}
 
 	public void setMessageService(MessageService messageService) {
 		// TODO Auto-generated method stub
