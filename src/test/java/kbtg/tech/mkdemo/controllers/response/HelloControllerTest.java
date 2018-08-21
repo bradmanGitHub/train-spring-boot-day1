@@ -9,9 +9,9 @@ public class HelloControllerTest {
 
 	@Test @Ignore
 	public void send_Hanaga_should_return_HelloHanaga() {
-		HelloResponse hr = new HelloResponse("Hanaga");
+		HelloResponse hr = new HelloResponse("Batman");
 		String actualResult = hr.getMessage();
-		assertEquals("Hello, Hanaga", actualResult);
+		assertEquals("Hello, Batman", actualResult);
 	}
 	
 	@Test
