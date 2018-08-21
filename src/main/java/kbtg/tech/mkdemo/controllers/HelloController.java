@@ -20,4 +20,9 @@ public class HelloController {
 		//return new HelloResponse(name);
 		return new HelloResponse(result);
 	}
+
+	public void setMessageService(MessageService messageService) {
+		// TODO Auto-generated method stub
+		this.messageService = messageService;
+	}
 }

@@ -7,7 +7,7 @@ import org.junit.Test;
 
 public class HelloControllerTest {
 
-	@Test @Ignore
+	@Test //@Ignore
 	public void send_Hanaga_should_return_HelloHanaga() {
 		HelloResponse hr = new HelloResponse("Batman");
 		String actualResult = hr.getMessage();
